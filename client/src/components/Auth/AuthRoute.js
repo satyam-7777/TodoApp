@@ -10,7 +10,7 @@ export default function AuthRoute({ type }) {
   }
 
   if (type === "protected" && !user) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/" replace />;
   }
 
   if (type === "public" && user) {
