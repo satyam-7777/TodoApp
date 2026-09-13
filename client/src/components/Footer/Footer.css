@@ -3,8 +3,14 @@
   justify-content: space-between;
   background-color: #f8f9fa;
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   align-items: center;
+}
+
+.footer-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .heart-icon {
@@ -14,7 +20,7 @@
   fill: #ef4444;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .footer {
     padding: 12px;
     font-size: 13px;

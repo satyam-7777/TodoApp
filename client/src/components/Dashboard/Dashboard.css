@@ -101,8 +101,8 @@
 .todo-checkbox {
   appearance: none;
   -webkit-appearance: none;
-  width: 19px;
-  height: 19px;
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
   border: 2px solid #cbd5e1;
   border-radius: 50%;
@@ -153,11 +153,6 @@
   border-radius: 6px;
 }
 
-.delete-btn:hover {
-  color: #dc2626;
-  /* background-color: #f1f5f9; */
-}
-
 .add-task-btn {
   padding: 9px 16px;
   font-family: inherit;
@@ -206,6 +201,12 @@
   color: #dc2626;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .delete-btn:hover {
+    color: red;
+  }
+}
+
 @media (max-width: 600px) {
   .todo-board {
     width: 100%;
@@ -231,10 +232,14 @@
   }
 
   .priority-box {
-    gap: 6px;
+    gap: 10px;
   }
 
   .priority-box span {
     padding: 4px 8px;
+  }
+
+  .edit-btn {
+    font-size: 20px;
   }
 }

@@ -32,7 +32,7 @@ export default function Hero() {
       <section className="card-container">
         <div className="todo-sample-card">
           <header className="sample-card-header">
-            <p>Today's Task</p>
+            <p>My Todos</p>
             <span>3 of 5 done</span>
           </header>
 
