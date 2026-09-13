@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.main {
+  flex: 1;
+  background-color: #eaf2ff;
+  display: flex;
+  justify-content: center;
+}

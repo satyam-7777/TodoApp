@@ -1,0 +1,11 @@
+.form-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.signup-title {
+  font-weight: 400;
+  font-size: 24px;
+}

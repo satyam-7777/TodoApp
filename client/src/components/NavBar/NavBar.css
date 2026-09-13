@@ -1,0 +1,106 @@
+.navbar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 22px;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  color: #2563eb;
+}
+
+.moon-icon {
+  width: 20px;
+  height: 20px;
+  color: #111827;
+  /* fill: green; */
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo-title {
+  color: black;
+  font-weight: 600;
+}
+
+.moon-btn {
+  border: none;
+  font-size: 10px;
+}
+
+.signup-link,
+.dashboard-link,
+.logout-link {
+  background: #2563eb;
+  color: #fff;
+  border: 1px solid #2563eb;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.logout-link {
+  /* background-color: #fee2e2; */
+  background: none;
+  color: black;
+  border: 1px solid black;
+}
+
+.logout-link:hover {
+  background-color: #b91c1c;
+  color: #fee2e2;
+  border: 1px solid #b91c1c;
+}
+.login-link {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 12px;
+  }
+
+  .nav-links ul {
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .signup-link,
+  .dashboard-link,
+  .logout-link {
+    padding: 7px 8px;
+    font-size: 13px;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

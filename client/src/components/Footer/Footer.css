@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.heart-icon {
+  width: 15px;
+  height: 15px;
+  color: #ef4444;
+  fill: #ef4444;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 12px;
+    font-size: 13px;
+  }
+}

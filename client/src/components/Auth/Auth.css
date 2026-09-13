@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.auth-card-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../../../img/page_background.png");
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  padding: 20px;
+}
+
+.auth-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: white;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  /* padding: 20px; */
+}
+
+.form label {
+  color: #334155;
+}
+
+.form input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #e2e8f0;
+  resize: none;
+  background-color: #f8fafc;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.required-icon {
+  font-size: 12px;
+}
+
+input::placeholder {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.submit-btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  border: 1px solid #2563eb;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .auth-card {
+    max-width: 90%;
+  }
+}
