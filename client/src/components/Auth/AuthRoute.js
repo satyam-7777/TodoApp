@@ -3,9 +3,9 @@ import { useAuth } from "../../context/authContext";
 import Loader from "../Loader/Loader";
 
 export default function AuthRoute({ type }) {
-  const { user, loading } = useAuth();
+  const { user, authLoading } = useAuth();
 
-  if (loading) {
+  if (authLoading) {
     return <Loader />;
   }
 

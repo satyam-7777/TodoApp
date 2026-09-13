@@ -33,7 +33,10 @@ export default function Dashboard() {
       <div className="dashboard-container">
         <NavBar />
         <Welcome user={user} />
-        <TodoBoard />
+        <div className="dashboard-main">
+          <TodoBoard />
+        </div>
+
         <Footer />
         <TodoForm />
       </div>

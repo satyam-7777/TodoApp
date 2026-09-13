@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 .auth-card-container {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   background-image: url("../../../img/page_background.png");
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .auth-card {

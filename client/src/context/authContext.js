@@ -22,8 +22,8 @@ export async function authAPI(formData, endpoint, errorMsg) {
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
-  //   const [error, setError] = useState("");
+  const [authLoading, setAuthLoading] = useState(true);
+  const [actionLoading, setActionLoading] = useState(false);
 
   async function getCurrentUser() {
     try {
@@ -41,19 +41,20 @@ export function AuthProvider({ children }) {
     } catch (error) {
       setUser(null);
     } finally {
-      setLoading(false);
+      setAuthLoading(false);
     }
   }
 
   async function logoutUser() {
     try {
-      setLoading(true);
+      setActionLoading(true);
+
       await authAPI(null, "logout", "Logout");
       setUser(null);
     } catch (err) {
       console.log("error while logging out");
     } finally {
-      setLoading(false);
+      setActionLoading(false);
     }
   }
 
@@ -62,7 +63,16 @@ export function AuthProvider({ children }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, setUser, loading, logoutUser, setLoading }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        setUser,
+        authLoading,
+        actionLoading,
+        setActionLoading,
+        logoutUser,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );
