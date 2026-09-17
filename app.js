@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 app.use("/api/v1/tasks", taskRouter);
 app.use("/api/v1/users", userRouter);
 
-// handling unhandled routes
+// Handling unhandled routes
 app.all("/api/v1/{*splat}", (req, res, next) => {
   next(new AppError("Requested URL is not available on the server", 404));
 });
@@ -38,7 +38,7 @@ app.get("/{*splat}", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
-// error middleware
+// Error middleware
 app.use(globalErrorHandler);
 
 module.exports = app;
