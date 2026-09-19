@@ -17,10 +17,10 @@ deployment**.
 ## Live Project
 
 **Live URL:**\
-`https://todoapp-smqs.onrender.com`
+<https://todoapp-smqs.onrender.com>
 
 **GitHub Repository:**\
-`https://github.com/satyam-7777/TodoApp`
+<https://github.com/satyam-7777/TodoApp>
 
 ---
 
